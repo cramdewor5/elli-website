@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elli D. Economou LLC - Advocates & Legal Consultants</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Elli D. Economou LLC Logo" class="logo-img">
+                <div>
+                    <h1>ELLI D. ECONOMOU LLC</h1>
+                    <h2>ADVOCATES - LEGAL CONSULTANTS</h2>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Practice Areas</a></li>
+                    <li><a href="#request-form">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+          <div class="container">
+             <p>Elli D. Economou LLC is a respected law firm based in Larnaca, Cyprus, with over 18 years of proven experience in civil, family, criminal and corporate law. Renowned for its unwavering professionalism, integrity, and client-centered focus, our firm delivers strategic legal solutions and dedicated representation across a broad spectrum of legal matters.</p>
+          </div>
+      </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Practice Areas</h2>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Corporate Law</h3>
+                            <p>We assist businesses with company formation, compliance, and trademark registration to protect your brand.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Contract Law</h3>
+                            <p>Our law firm specializes in drafting, reviewing, and enforcing contracts, protecting your rights in personal and business agreements.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Family Law</h3>
+                            <p>We handle matters such as divorce, custody, alimony, and property disputes with care and effective legal strategies.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Immigration Law</h3>
+                            <p>We offer comprehensive services for immigration issues, including residency, permits, and legal representation.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Tort Law</h3>
+                            <p>Managing civil wrong cases and helping clients claim compensation for damages from wrongful acts.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Administrative Law</h3>
+                            <p>Representing clients in disputes with government bodies to ensure fairness in public law matters.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Criminal Law</h3>
+                            <p>Providing robust defense in criminal cases, protecting your rights in both District and Assize Courts.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-item">
+                            <h3>Employment Law</h3>
+                            <p>Addressing workplace issues, including contracts, disputes, and rights, ensuring fair treatment for all parties.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="request-form">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="mailto:info@economoulaw.cy" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="telephone" placeholder="Your Telephone" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <div class="button-container">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Find Us</h2>
+            <p class="contact-details">
+                <i class="fas fa-phone"></i> Tel: +357 24 632 800<br>
+                <i class="fas fa-envelope"></i> Email: info@economoulaw.cy
+            </p>
+            <p class="address">Rafael Santi 58,<br>
+            Larnaca 6052, Cyprus</p>
+            <p><a href="https://share.google/bNufaL95r4NXNR9Hc">View on Google Maps</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ELLI D. ECONOMOU LLC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4, /* Show exactly 4 cards */
+            spaceBetween: 50, /* Increased space between cards */
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html> 

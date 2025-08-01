@@ -1,0 +1,279 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+header {
+    background-color: #757575;
+    padding: 15px 0;
+    border-bottom: 3px solid #f8d7da;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 40px;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo h1, .logo h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.logo h1 { font-size: 2em; }
+.logo h2 { font-size: 1em; color: #f2f2f2; }
+
+nav {
+    position: absolute;
+    right: 40px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+}
+
+nav a:hover {
+    color: #f8d7da;
+}
+
+section {
+    padding: 30px 0;
+    scroll-margin-top: 100px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section#services {
+    margin-bottom: 50px; /* Add space below the slideshow section */
+}
+
+#home {
+    background: linear-gradient(rgba(248, 215, 218, 0.3), rgba(248, 215, 218, 0.3)), url('../images/background.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 150px 0;
+}
+
+#home .container p {
+    font-size: 1.3em;
+    color: #505050;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 50px;
+}
+
+.swiper-container {
+    width: calc(100% - 200px);
+    margin: 50px auto 0;
+    height: 200px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item {
+    background-color: #505050;
+    color: #ffffff;
+    padding: 20px 15px 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h3 {
+    color: #f8d7da;
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #f8d7da;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next { right: -70px; }
+.swiper-button-prev { left: -70px; }
+
+.swiper-pagination {
+    bottom: -15px !important; /* Move pagination lower */
+}
+
+.swiper-pagination-bullet-active {
+    background: #f8d7da;
+}
+
+#request-form {
+    background-color: #f2f2f2;
+}
+
+#request-form h2 {
+    color: #333;
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Distribute space */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width for Name and Message */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input[type="email"],
+input[type="tel"] {
+    width: calc(50% - 10px); /* Half width for Email and Tel */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #d4a3a8;
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #c88f95;
+}
+
+#contact, footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+}
+
+#contact {
+    padding: 15px 0 10px 0;
+}
+
+#contact h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#contact p {
+    margin: 5px 0;
+}
+
+#contact p.address {
+    margin-top: 50px;
+}
+
+.contact-details {
+    margin-bottom: 0;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+#contact a {
+    color: #f8d7da;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px 0;
+} 
